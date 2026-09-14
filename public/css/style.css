@@ -1,0 +1,33 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+	background-color: #f4f4f9;
+	color: #333;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px 10px;
+}
+
+table {
+	width: 100%;
+	margin-top: 10px;
+	background-color: #fff;
+}
+
+th {
+	background-color: #e2e2e2;
+}
+
+.sidebar {
+	float: left;
+	width: 200px;
+	padding: 15px;
+	background-color: #eee;
+}
+
+.error {
+	color: red;
+}

@@ -1,0 +1,78 @@
+/* Shared look for the Bus & Route pages (views/busroute). */
+* { box-sizing: border-box; }
+
+body {
+	font-family: "Segoe UI", Arial, sans-serif;
+	background: #f4f6f9;
+	color: #2d3748;
+	line-height: 1.5;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 20px 40px;
+}
+
+a { color: #553c9a; }
+
+.br-nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	background: #553c9a;
+	color: #fff;
+	padding: 12px 18px;
+	border-radius: 0 0 8px 8px;
+	margin-bottom: 20px;
+}
+.br-nav a { color: #fff; text-decoration: none; margin-left: 14px; }
+.br-nav a:hover { text-decoration: underline; }
+
+h1 { color: #322659; font-size: 1.6rem; margin: 10px 0 4px; }
+h2 { color: #4a5568; font-size: 1.15rem; margin: 6px 0 14px; }
+
+ul li { margin: 6px 0; }
+
+/* tables ("body" makes these win over the pages' own table style) */
+body table { width: 100%; background: #fff; border-collapse: collapse; margin-top: 10px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06); }
+body th, body td { border: 1px solid #e2e8f0; padding: 9px 12px; text-align: left; vertical-align: middle; }
+body th { background: #edf2f7; color: #4a5568; font-size: 0.82rem; text-transform: uppercase; }
+td form { display: inline; margin: 0; }
+
+/* create and edit forms */
+body > form { background: #fff; padding: 20px 22px; border-radius: 8px; max-width: 540px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); }
+body > form br { display: none; }
+body > form input[type=text],
+body > form input[type=number],
+body > form input[type=date],
+body > form input[type=time],
+body > form select {
+	display: block;
+	width: 100%;
+	padding: 8px 10px;
+	margin: 4px 0 14px;
+	border: 1px solid #cbd5e0;
+	border-radius: 6px;
+	font-size: 0.95rem;
+	background: #fff;
+}
+
+input[type=submit], .btn {
+	display: inline-block;
+	padding: 7px 14px;
+	border: none;
+	border-radius: 6px;
+	background: #553c9a;
+	color: #fff;
+	font-weight: 600;
+	font-size: 0.9rem;
+	text-decoration: none;
+	cursor: pointer;
+}
+input[type=submit]:hover, .btn:hover { background: #44337a; }
+td input[type=submit][value=Delete] { background: #e53e3e; }
+td input[type=submit][value=Delete]:hover { background: #c53030; }
+
+.flash-success, .flash-error { padding: 10px 14px; border-radius: 6px; margin: 10px 0; }
+.flash-success { background: #f0fff4; color: #276749; border-left: 4px solid #38a169; }
+.flash-error { background: #fff5f5; color: #9b2c2c; border-left: 4px solid #e53e3e; }
